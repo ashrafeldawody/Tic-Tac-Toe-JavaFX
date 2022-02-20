@@ -10,12 +10,15 @@ A network based Tic tac toe game, the implementation was done as the java projec
 
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
- - [Installing](#installing)
- - [Diagrams](#diagrams)
-	 - [Class Diagram](#class-diagram)
-	 - [Database Schema](#database-schema)
-  - [Features ](#features)
-	  - [Feature 1](#feature-1)
+- [Installing](#installing)
+- [Features ](#features)
+- [Diagrams](#diagrams)
+- [Built With](#built-with)
+- [Authors](#authors)
+- [Screenshot](#screenshot)
+- [Video Preview](#video-preview)
+- [License](#license)
+
 
 ### Prerequisites
 
