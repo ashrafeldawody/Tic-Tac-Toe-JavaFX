@@ -1,0 +1,18 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 4, 2022, 7:53:37 AM
+    Author     : ashra
+*/
+.root {
+  -fx-font-size: 40pt ;
+  
+}
+GridPane{
+    -fx-alignment: center
+}
+.gameGrid Line {
+  -fx-stroke   : white;
+}

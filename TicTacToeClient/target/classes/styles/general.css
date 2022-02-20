@@ -1,0 +1,58 @@
+.root{
+    -fx-background-image: url(../images/background.jpg);
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 50px;
+}
+.table-view{
+    -fx-background-color: #ffffff53;
+    -fx-background-radius: 30px;
+    -fx-fill:#00499a;
+}
+.table-view .column-header-background{
+    -fx-background-color: #fff;        
+     -fx-padding: 5px;
+    -fx-background-radius:30 ;
+     -fx-background-insets: 0 0 10 0;
+     -fx-effect: dropshadow(gaussian,#00499a, 15, 0.5, 0.0, 0.0);
+
+    }
+    .table-view .column-header, .table-view .filler{
+        -fx-size:50px;
+        -fx-border-width: 0 0 10 0;
+        -fx-background-color:transparent;
+        
+    }
+    .table-view .column-header .label{
+            -fx-text-fill:#00499a;
+            -fx-size:50px;
+           
+             -fx-font-size: 9pt;
+    }
+    
+    .table-view .column-header-background .label {
+        -fx-font-size: 13pt;
+}
+.button{
+    -fx-cursor: hand;
+    -fx-border-color: #fff;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-color: #ffffff00;
+}
+.button:hover{
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-scale-z: 1.05;
+}
+.innerContainer{
+    -fx-background-color: #000000a8;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+}

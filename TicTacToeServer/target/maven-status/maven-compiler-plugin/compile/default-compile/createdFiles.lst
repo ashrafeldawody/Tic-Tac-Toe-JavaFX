@@ -1,0 +1,17 @@
+server\AppLauncher.class
+server\models\game\Game$Move.class
+server\models\game\GameMove.class
+server\models\Helpers.class
+server\models\game\SoloGame.class
+server\App.class
+server\models\DatabaseAccess.class
+server\models\Player.class
+server\models\Server.class
+server\models\ClientHandler.class
+server\models\game\Game.class
+server\models\Client.class
+server\models\JSONRequests.class
+server\models\game\NetworkGame.class
+server\models\game\SoloGame$Difficulty.class
+server\models\game\ReplayGame.class
+server\controllers\MainWindowController.class

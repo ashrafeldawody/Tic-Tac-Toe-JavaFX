@@ -1,0 +1,29 @@
+.container{
+    -fx-background-image: url(../images/background.jpg);
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 50px;
+}
+.button{
+    -fx-cursor: hand;
+    -fx-border-color: #fff;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-color: #ffffff00;
+}
+.button:hover{
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+    -fx-scale-z: 1.03;
+}
+.innerContainer{
+    -fx-background-color: #000000a8;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+}

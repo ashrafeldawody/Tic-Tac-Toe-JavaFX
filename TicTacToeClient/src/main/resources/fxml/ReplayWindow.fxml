@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainPane" fx:id="rootAnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.GameReplayWindowController">
+    <children>
+      <Pane layoutX="25.0" layoutY="25.0" prefHeight="450.0" prefWidth="800.0" styleClass="innerContainer" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="28.0" layoutY="14.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="442.0" prefWidth="702.0" spacing="20.0">
+                     <children>
+                        <FlowPane alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefHeight="418.0" prefWidth="172.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/logo.png" />
+                                 </image>
+                                 <FlowPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+                                 </FlowPane.margin>
+                              </ImageView>
+                              <Label fx:id="myUsername" text="ME" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                                 <FlowPane.margin>
+                                    <Insets top="10.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                              <Label fx:id="myMove" alignment="CENTER" prefHeight="63.0" prefWidth="146.0" text="X" textAlignment="CENTER" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="49.0" />
+                                 </font>
+                                 <effect>
+                                    <Bloom />
+                                 </effect>
+                              </Label>
+                           </children>
+                        </FlowPane>
+                        <FlowPane alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefHeight="372.0" prefWidth="600.0">
+                           <children>
+                              <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="180.0" prefHeight="62.0" prefWidth="122.0" prefWrapLength="0.0">
+                                 <children>
+                                    <Label fx:id="headerLabel" alignment="CENTER" text="GAME REPLAY" textAlignment="CENTER" textFill="#73ff0f">
+                                       <font>
+                                          <Font size="31.0" />
+                                       </font>
+                                       <effect>
+                                          <Glow level="1.0" />
+                                       </effect>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                                <GridPane fx:id="gameGrid" alignment="CENTER" hgap="5.0" maxHeight="300.0" maxWidth="300.0" minHeight="300.0" minWidth="300.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="300.0" prefWidth="300.0" styleClass="gameGrid" vgap="5.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="field1" disable="true" mnemonicParsing="false" onMouseEntered="#mouseEntered" prefHeight="150.0" prefWidth="150.0" textFill="WHITE" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="49.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="-10.0" left="-10.0" right="-10.0" top="-10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button fx:id="field2" disable="true" mnemonicParsing="false" onMouseEntered="#mouseEntered" prefHeight="150.0" prefWidth="150.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="49.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="-10.0" left="-10.0" right="-10.0" top="-10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button fx:id="field3" disable="true" mnemonicParsing="false" onMouseEntered="#mouseEntered" prefHeight="150.0" prefWidth="150.0" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="49.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="-10.0" left="-10.0" right="-10.0" top="-10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button fx:id="field4" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseEntered="#mouseEntered" prefHeight="150.0" prefWidth="150.0" textFill="WHITE" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="49.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="-10.0" left="-10.0" right="-10.0" top="-10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button fx:id="field5" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseEntered="#mouseEntered" prefHeight="150.0" prefWidth="150.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="49.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets bottom="-10.0" left="-10.0" right="-10.0" top="-10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button fx:id="field6" disable="true" mnemonicParsing="false" onMouseEntered="#mouseEntered" prefHeight="150.0" prefWidth="150.0" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="49.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="-10.0" left="-10.0" right="-10.0" top="-10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button fx:id="field7" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseEntered="#mouseEntered" textFill="WHITE" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="49.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="-10.0" left="-10.0" right="-10.0" top="-10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button fx:id="field8" alignment="CENTER" contentDisplay="CENTER" disable="true" focusTraversable="false" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseEntered="#mouseEntered" prefWidth="150.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="49.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="-10.0" left="-10.0" right="-10.0" top="-10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button fx:id="field9" disable="true" mnemonicParsing="false" onMouseEntered="#mouseEntered" prefHeight="150.0" prefWidth="150.0" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="49.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets bottom="-10.0" left="-10.0" right="-10.0" top="-10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                </GridPane>
+                           </children>
+                        </FlowPane>
+                        <FlowPane alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefHeight="418.0" prefWidth="172.0">
+                           <children>
+                              <ImageView fitHeight="159.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/logo.png" />
+                                 </image>
+                                 <FlowPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+                                 </FlowPane.margin>
+                              </ImageView>
+                              <Label fx:id="opponentUsername" text="Opponent" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                                 <FlowPane.margin>
+                                    <Insets top="10.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                              <Label fx:id="opponentMove" alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="110.0" text="O" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="49.0" />
+                                 </font>
+                                 <effect>
+                                    <Bloom />
+                                 </effect>
+                              </Label>
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </HBox>
+                  <FlowPane fx:id="chatPane" alignment="BOTTOM_CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefHeight="46.0" prefWidth="702.0">
+                     <children>
+                        <VBox fx:id="finalButtonsPane" alignment="CENTER" prefHeight="101.0" prefWidth="218.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="backbtn" cancelButton="true" mnemonicParsing="false" onAction="#back" prefHeight="66.0" prefWidth="200.0" text="Back" textFill="WHITE" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </FlowPane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+                <!--  <Line fx:id="WinLine" endX="278.3999938964844" endY="256.5999755859375" layoutX="-28.0" layoutY="-7.0" opacity="0.76" startX="74.69998931884766" startY="55.400001525878906" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="50.0" /> -->
+    </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <stylesheets>
+      <URL value="@../styles/general.css" />
+      <URL value="@../styles/gameWindow.css" />
+   </stylesheets>
+</AnchorPane>
