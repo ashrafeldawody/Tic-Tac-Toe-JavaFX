@@ -91,7 +91,7 @@ Server Features:
 ![hg](https://i.imgur.com/2SaQmgz.png)
 ## Video Preview
 
-[![Video Preview](https://img.youtube.com/vi/WTG8zUbe8yA/0.jpg)](https://www.youtube.com/watch?v=WTG8zUbe8yA)
+[![Video Preview](https://img.youtube.com/vi/k8eiaKY0I2Y/0.jpg)](https://www.youtube.com/watch?v=k8eiaKY0I2Y)
 
 ## License
 
